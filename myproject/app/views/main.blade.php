@@ -54,7 +54,7 @@
 						@if ( $current_page == $page['page'] )
 							<strong>{{ $page['page'] }}</strong>
 						@else
-							<a href="{{ url('main') . '/?p=' . $page['page'] }}" title="">{{ $page['page'] }}</a>
+							<a href="{{ url('main') . '/?p=' . $page['page'] . '&t=' . $current_type }}" title="">{{ $page['page'] }}</a>
 						@endif
 					@else
 						...
